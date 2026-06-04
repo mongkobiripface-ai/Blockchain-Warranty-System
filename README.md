@@ -21,6 +21,14 @@
 
 </div>
 
+<p align="center">
+  <img src="images/poster.png" width="100%" alt="WarrantyChain Poster">
+</p>
+
+<p align="center">
+<b>Blockchain Warranty Management System on Ethereum Sepolia Testnet</b>
+</p>
+
 ---
 
 # 📖 Giới Thiệu
@@ -78,15 +86,36 @@ Người dùng
 
 ---
 
+# 📜 Smart Contract Information
+
+| Thông tin          | Giá trị                  |
+| ------------------ | ------------------------ |
+| Blockchain Network | Ethereum Sepolia Testnet |
+| Smart Contract     | WarrantySystem.sol       |
+| Wallet             | MetaMask                 |
+| Ngôn ngữ           | Solidity                 |
+| Frontend           | HTML, CSS, JavaScript    |
+
+### Các Chức Năng Chính
+
+* registerProduct()
+* updateWarranty()
+* addRepairHistory()
+* getProductInfo()
+
+> Có thể bổ sung Contract Address sau khi triển khai chính thức trên Ethereum Sepolia.
+
+---
+
 # ✨ Chức Năng Chính
 
-### 👨‍💼 Quản Trị Viên
+## 👨‍💼 Quản Trị Viên
 
 * ➕ Thêm sản phẩm mới
 * 🔧 Cập nhật lịch sử sửa chữa
 * 📋 Quản lý thông tin bảo hành
 
-### 👤 Người Dùng
+## 👤 Người Dùng
 
 * 🔍 Tra cứu sản phẩm
 * 📅 Kiểm tra thời hạn bảo hành
@@ -127,6 +156,32 @@ Hiển thị các giao dịch đã thực hiện trên hệ thống như thêm s
 
 ![Lịch sử giao dịch](images/history.png)
 
+---
+
+# 🎥 Demo & Truy Cập Nhanh
+
+## Video Demo
+
+Thêm liên kết video demo dự án tại đây:
+
+https://youtube.com/
+
+## QR Code Repository
+
+![QR Code](images/qrcode.png)
+
+---
+
+# 📊 Thống Kê Dự Án
+
+* 01 Smart Contract Solidity
+* 04 Giao diện chức năng chính
+* Kết nối MetaMask Wallet
+* Triển khai trên Ethereum Sepolia Testnet
+* Hệ thống quản lý bảo hành phi tập trung
+* Hỗ trợ truy xuất lịch sử bảo hành minh bạch
+
+---
 
 # 📂 Cấu Trúc Dự Án
 
@@ -139,6 +194,8 @@ Blockchain-Warranty-System
 ├── style.css
 │
 ├── images
+│   ├── poster.png
+│   ├── qrcode.png
 │   ├── home.png
 │   ├── metamask.png
 │   ├── warranty.png
