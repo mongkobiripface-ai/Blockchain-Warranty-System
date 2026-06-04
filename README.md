@@ -7,15 +7,7 @@
 </p>
 
 <p align="center">
-<b>🛡️ Blockchain Warranty System</b><br>
-Hệ Thống Quản Lý Bảo Hành Sản Phẩm Dựa Trên Công Nghệ Blockchain Ethereum
-</p>
-
-<p align="center">
-📚 Môn học: Blockchain<br>
-👨‍🎓 Sinh viên: Nguyễn Trung Hiếu - 1671020110<br>
-👨‍🏫 Giảng viên hướng dẫn: ThS. Trần Đăng Công<br>
-🏫 Đại Học Đại Nam
+<b>Blockchain Warranty Management System on Ethereum Sepolia Testnet</b>
 </p>
 
 > 💡 Nhấn vào poster để xem kích thước đầy đủ.
