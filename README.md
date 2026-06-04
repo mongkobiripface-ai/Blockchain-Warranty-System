@@ -1,7 +1,4 @@
-# 📌 POSTER ĐỀ TÀI
-
-![Poster](images/poster.png)
-
+![Poster](images/test.png)
 # 📖 Giới Thiệu
 Blockchain Warranty System là ứng dụng phi tập trung (DApp) hỗ trợ quản lý bảo hành sản phẩm bằng công nghệ Blockchain Ethereum.
 
