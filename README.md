@@ -2,13 +2,13 @@
 
 <div align="center">
 
-## 🛡️ Hệ Thống Quản Lý Bảo Hành Sản Phẩm Dựa Trên Công Nghệ Blockchain
+# 🛡️ HỆ THỐNG QUẢN LÝ BẢO HÀNH SẢN PHẨM
 
-### 👨‍🎓 Nguyễn Trung Hiếu
+## Dựa Trên Công Nghệ Blockchain Ethereum
 
-### 🏫 Đại Học Đại Nam
-
-### 👨‍🏫 Giảng viên hướng dẫn: ThS. Trần Đăng Công
+👨‍🎓 **Nguyễn Trung Hiếu**
+🏫 **Đại Học Đại Nam**
+👨‍🏫 **Giảng viên hướng dẫn: ThS. Trần Đăng Công**
 
 ![Ethereum](https://img.shields.io/badge/Ethereum-Blockchain-blue)
 ![Solidity](https://img.shields.io/badge/Solidity-Smart%20Contract-black)
@@ -19,15 +19,15 @@
 
 ---
 
-## 📖 Giới Thiệu
+# 📖 Giới Thiệu
 
 Dự án xây dựng hệ thống quản lý bảo hành sản phẩm ứng dụng công nghệ Blockchain Ethereum nhằm nâng cao tính minh bạch, bảo mật và khả năng truy xuất dữ liệu.
 
-Thông tin sản phẩm và lịch sử sửa chữa được lưu trữ trên Blockchain thông qua Smart Contract Solidity.
+Thông tin sản phẩm, thời hạn bảo hành và lịch sử sửa chữa được lưu trữ thông qua Smart Contract Solidity trên mạng Ethereum Sepolia Testnet.
 
 ---
 
-## 🎯 Mục Tiêu
+# 🎯 Mục Tiêu Đề Tài
 
 ✅ Quản lý bảo hành điện tử
 
@@ -37,24 +37,24 @@ Thông tin sản phẩm và lịch sử sửa chữa được lưu trữ trên B
 
 ✅ Hỗ trợ truy xuất lịch sử sửa chữa
 
-✅ Ứng dụng Blockchain vào thực tiễn
+✅ Ứng dụng Blockchain vào quản lý bảo hành sản phẩm
 
 ---
 
-## ⚙️ Công Nghệ Sử Dụng
+# ⚙️ Công Nghệ Sử Dụng
 
-| Công nghệ     | Mô tả               |
-| ------------- | ------------------- |
-| 🔗 Ethereum   | Blockchain Platform |
-| 📜 Solidity   | Smart Contract      |
-| 🦊 MetaMask   | Wallet Integration  |
-| 🌐 Sepolia    | Ethereum Testnet    |
-| 💻 HTML/CSS   | Frontend            |
-| 🚀 JavaScript | DApp Logic          |
+| Công nghệ     | Vai trò                  |
+| ------------- | ------------------------ |
+| 🔗 Ethereum   | Nền tảng Blockchain      |
+| 📜 Solidity   | Xây dựng Smart Contract  |
+| 🦊 MetaMask   | Kết nối ví người dùng    |
+| 🌐 Sepolia    | Mạng thử nghiệm Ethereum |
+| 💻 HTML/CSS   | Xây dựng giao diện       |
+| 🚀 JavaScript | Xử lý logic ứng dụng     |
 
 ---
 
-## 🏗️ Kiến Trúc Hệ Thống
+# 🏗️ Kiến Trúc Hệ Thống
 
 ```text
 Người dùng
@@ -63,54 +63,61 @@ Người dùng
 🌐 Frontend Website
      │
      ▼
-🦊 MetaMask
+🦊 MetaMask Wallet
      │
      ▼
 📜 Smart Contract
      │
      ▼
-🔗 Ethereum Sepolia
+🔗 Ethereum Sepolia Blockchain
 ```
 
 ---
 
-## ✨ Chức Năng Chính
+# ✨ Chức Năng Chính
 
-### 👨‍💼 Quản trị viên
+### 👨‍💼 Quản Trị Viên
 
-* ➕ Thêm sản phẩm
+* ➕ Thêm sản phẩm mới
 * 🔧 Cập nhật lịch sử sửa chữa
-* 📋 Quản lý bảo hành
+* 📋 Quản lý thông tin bảo hành
 
-### 👤 Người dùng
+### 👤 Người Dùng
 
 * 🔍 Tra cứu sản phẩm
 * 📅 Kiểm tra thời hạn bảo hành
 * 📖 Xem lịch sử sửa chữa
+* 🔗 Theo dõi giao dịch Blockchain
 
 ---
 
-## 📸 Hình Ảnh Hệ Thống
+# 📸 Hình Ảnh Hệ Thống
 
-### 🏠 Trang Chủ
+## 🏠 Trang Chủ
 
-*(Thêm ảnh giao diện tại đây)*
-
-### 🦊 Kết Nối MetaMask
-
-*(Thêm ảnh giao diện tại đây)*
-
-### 🔧 Quản Lý Bảo Hành
-
-*(Thêm ảnh giao diện tại đây)*
-
-### 📜 Lịch Sử Giao Dịch
-
-*(Thêm ảnh giao diện tại đây)*
+![Trang chủ](images/home.png)
 
 ---
 
-## 📂 Cấu Trúc Dự Án
+## 🦊 Kết Nối MetaMask
+
+![MetaMask](images/metamask.png)
+
+---
+
+## 🔧 Quản Lý Bảo Hành
+
+![Quản lý bảo hành](images/warranty.png)
+
+---
+
+## 📜 Lịch Sử Giao Dịch Blockchain
+
+![Lịch sử giao dịch](images/history.png)
+
+---
+
+# 📂 Cấu Trúc Dự Án
 
 ```text
 Blockchain-Warranty-System
@@ -119,38 +126,54 @@ Blockchain-Warranty-System
 ├── app.js
 ├── index.html
 ├── style.css
+│
+├── images
+│   ├── home.png
+│   ├── metamask.png
+│   ├── warranty.png
+│   └── history.png
+│
 └── README.md
 ```
 
 ---
 
-## 🚀 Kết Quả Đạt Được
+# 🚀 Kết Quả Đạt Được
 
-✅ Xây dựng thành công Smart Contract
+✅ Xây dựng thành công Smart Contract bằng Solidity
 
-✅ Kết nối MetaMask
+✅ Kết nối MetaMask với Ethereum Sepolia
 
-✅ Triển khai trên Sepolia Testnet
+✅ Quản lý bảo hành sản phẩm trên Blockchain
 
-✅ Quản lý bảo hành sản phẩm
+✅ Lưu trữ lịch sử sửa chữa minh bạch
 
-✅ Lưu lịch sử sửa chữa trên Blockchain
+✅ Hỗ trợ tra cứu thông tin bảo hành
+
+✅ Theo dõi giao dịch qua Blockchain Explorer
 
 ---
 
-## 🔗 GitHub Repository
+# 🔗 GitHub Repository
+
+Repository:
 
 https://github.com/mongkobiripface-ai/Blockchain-Warranty-System
 
 ---
 
-## 👨‍🎓 Tác Giả
+# 👨‍🎓 Tác Giả
 
 **Nguyễn Trung Hiếu**
 
-🎓 Sinh viên Công Nghệ Thông Tin
+🎓 Sinh viên ngành Công Nghệ Thông Tin
 
 🏫 Đại Học Đại Nam
 
+👨‍🏫 Giảng viên hướng dẫn: ThS. Trần Đăng Công
+
 📅 Năm học 2025 - 2026
-# Blockchain-Warranty-System
+
+---
+
+⭐ Dự án được thực hiện phục vụ mục đích học tập và nghiên cứu công nghệ Blockchain.
