@@ -97,17 +97,36 @@ Người dùng
 
 # 📸 Hình Ảnh Hệ Thống
 
-<p align="center">
-  <img src="images/home.png" width="45%">
-  <img src="images/metamask.png" width="45%">
-</p>
+## 🏠 Giao Diện Trang Chủ
 
-<p align="center">
-  <img src="images/warranty.png" width="45%">
-  <img src="images/history.png" width="45%">
-</p>
+Giao diện chính của hệ thống hiển thị thống kê sản phẩm, tình trạng bảo hành và các chức năng quản lý.
+
+![Trang chủ](images/home.png)
 
 ---
+
+## 🦊 Kết Nối Ví MetaMask
+
+Người dùng kết nối ví MetaMask để xác thực và thực hiện các giao dịch trên Blockchain Ethereum Sepolia.
+
+![MetaMask](images/metamask.png)
+
+---
+
+## 🔧 Quản Lý Và Tra Cứu Bảo Hành
+
+Cho phép thêm sản phẩm mới, tra cứu thông tin bảo hành và quản lý dữ liệu sản phẩm.
+
+![Quản lý bảo hành](images/warranty.png)
+
+---
+
+## 📜 Lịch Sử Giao Dịch Blockchain
+
+Hiển thị các giao dịch đã thực hiện trên hệ thống như thêm sản phẩm và cập nhật lịch sử sửa chữa.
+
+![Lịch sử giao dịch](images/history.png)
+
 
 # 📂 Cấu Trúc Dự Án
 
