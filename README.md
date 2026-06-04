@@ -1,26 +1,3 @@
-# 🔗 Blockchain Warranty System
-
-<div align="center">
-
-# 🛡️ HỆ THỐNG QUẢN LÝ BẢO HÀNH SẢN PHẨM
-
-## Dựa Trên Công Nghệ Blockchain Ethereum
-
-### 👨‍🎓 Nguyễn Trung Hiếu
-
-### 🏫 Đại Học Đại Nam
-
-### 👨‍🏫 Giảng viên hướng dẫn: ThS. Trần Đăng Công
-
-![GitHub repo size](https://img.shields.io/github/repo-size/mongkobiripface-ai/Blockchain-Warranty-System)
-![GitHub last commit](https://img.shields.io/github/last-commit/mongkobiripface-ai/Blockchain-Warranty-System)
-![Ethereum](https://img.shields.io/badge/Ethereum-Blockchain-blue)
-![Solidity](https://img.shields.io/badge/Solidity-Smart%20Contract-black)
-![MetaMask](https://img.shields.io/badge/MetaMask-Wallet-orange)
-![Sepolia](https://img.shields.io/badge/Sepolia-Testnet-green)
-
-</div>
-
 # 📌 POSTER ĐỀ TÀI
 
 <p align="center">
