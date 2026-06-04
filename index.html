@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WarrantyChain | Blockchain Management</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="bg-blur one"></div>
+    <div class="bg-blur two"></div>
+
+    <header class="navbar">
+        <div class="brand">
+            <div class="logo">W</div>
+            <div>
+                <h1>WarrantyChain</h1>
+                <p>Blockchain Warranty Management</p>
+            </div>
+        </div>
+        <button class="connect-btn" onclick="connectWallet()">Kết nối MetaMask</button>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-text">
+                <span class="badge">Sepolia Testnet</span>
+                <h2>Quản lý bảo hành sản phẩm bằng Blockchain</h2>
+                <p>Lưu trữ thông tin sản phẩm, thời hạn bảo hành và lịch sử sửa chữa minh bạch, bảo mật và không thể chỉnh sửa.</p>
+            </div>
+            <div class="wallet-panel">
+                <p>Ví đang kết nối</p>
+                <h3 id="walletAddress">Chưa kết nối</h3>
+                <span id="networkName">Network: --</span>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <span>📦</span>
+                <h3 id="totalProducts">0</h3>
+                <p>Sản phẩm đã thêm</p>
+            </div>
+            <div class="stat-card">
+                <span>🛠️</span>
+                <h3 id="totalRepairs">0</h3>
+                <p>Lịch sử sửa chữa</p>
+            </div>
+            <div class="stat-card">
+                <span>🔗</span>
+                <h3>Sepolia</h3>
+                <p>Blockchain Network</p>
+            </div>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>Thêm sản phẩm</h3>
+                <input id="productId" placeholder="Mã sản phẩm (ví dụ: IP15PM200)" />
+                <input id="productName" placeholder="Tên sản phẩm" />
+                <input id="customerAddress" readonly placeholder="Tự động lấy từ MetaMask" />
+                <input id="warrantyMonths" type="number" placeholder="Thời hạn bảo hành (tháng)" />
+                <button onclick="addProduct()">Thêm sản phẩm</button>
+            </div>
+            <div class="card">
+                <h3>Tra cứu bảo hành</h3>
+                <input id="searchProductId" placeholder="Nhập mã sản phẩm" />
+                <button onclick="getProduct()">Tra cứu</button>
+                <div id="productResult" class="result empty">Chưa có dữ liệu tra cứu.</div>
+            </div>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>Thêm lịch sử sửa chữa</h3>
+                <input id="repairProductId" placeholder="Mã sản phẩm" />
+                <input id="repairIssue" placeholder="Lỗi gặp phải" />
+                <input id="repairSolution" placeholder="Cách xử lý" />
+                <input id="technician" placeholder="Kỹ thuật viên" />
+                <button onclick="addRepairHistory()">Thêm lịch sử</button>
+            </div>
+            <div class="card">
+                <h3>Xem lịch sử sửa chữa</h3>
+                <input id="historyProductId" placeholder="Mã sản phẩm" />
+                <input id="historyIndex" type="number" placeholder="Lần sửa chữa (ví dụ: 0)" />
+                <button onclick="getRepairHistory()">Xem lịch sử</button>
+                <div id="historyResult" class="result empty">Chưa có lịch sử sửa chữa.</div>
+            </div>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>Kiểm tra bảo hành</h3>
+                <input id="validProductId" placeholder="Mã sản phẩm" />
+                <button onclick="isWarrantyValid()">Kiểm tra</button>
+                <div id="validResult" class="result empty">Chưa kiểm tra.</div>
+            </div>
+            <div class="card qr-card">
+                <h3>QR tra cứu bảo hành</h3>
+                <div id="qrBox">
+                    <img id="qrImage" class="qr-image" src="" alt="QR Code" />
+                </div>
+            </div>
+        </section>
+
+        <section class="card full">
+            <h3>Lịch sử giao dịch gần đây</h3>
+            <div id="txHistory" class="result">Chưa có giao dịch.</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 WarrantyChain - Blockchain Warranty Management System</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WarrantyChain | Blockchain Management</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="bg-blur one"></div>
+    <div class="bg-blur two"></div>
+
+    <header class="navbar">
+        <div class="brand">
+            <div class="logo">W</div>
+            <div>
+                <h1>WarrantyChain</h1>
+                <p>Blockchain Warranty Management</p>
+            </div>
+        </div>
+        <button class="connect-btn" onclick="connectWallet()">Kết nối MetaMask</button>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-text">
+                <span class="badge">Sepolia Testnet</span>
+                <h2>Quản lý bảo hành sản phẩm bằng Blockchain</h2>
+                <p>Lưu trữ thông tin sản phẩm, thời hạn bảo hành và lịch sử sửa chữa minh bạch, bảo mật và không thể
+                    chỉnh sửa.</p>
+            </div>
+            <div class="wallet-panel">
+                <p>Ví đang kết nối</p>
+                <h3 id="walletAddress">Chưa kết nối</h3>
+                <span id="networkName">Network: --</span>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <span>📦</span>
+                <h3 id="totalProducts">0</h3>
+                <p>Sản phẩm đã thêm</p>
+            </div>
+            <div class="stat-card">
+                <span>🛠️</span>
+                <h3 id="totalRepairs">0</h3>
+                <p>Lịch sử sửa chữa</p>
+            </div>
+            <div class="stat-card">
+                <span>🔗</span>
+                <h3>Sepolia</h3>
+                <p>Blockchain Network</p>
+            </div>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>Thêm sản phẩm</h3>
+                <input id="productId" placeholder="Mã sản phẩm (ví dụ: IP15PM200)" />
+                <input id="productName" placeholder="Tên sản phẩm" />
+                <input id="customerAddress" readonly placeholder="Tự động lấy từ MetaMask" />
+                <input id="warrantyMonths" type="number" placeholder="Thời hạn bảo hành (tháng)" />
+                <button onclick="addProduct()">Thêm sản phẩm</button>
+            </div>
+            <div class="card">
+                <h3>Tra cứu bảo hành</h3>
+                <input id="searchProductId" placeholder="Nhập mã sản phẩm" />
+                <button onclick="getProduct()">Tra cứu</button>
+                <div id="productResult" class="result empty">Chưa có dữ liệu tra cứu.</div>
+            </div>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>Thêm lịch sử sửa chữa</h3>
+                <input id="repairProductId" placeholder="Mã sản phẩm" />
+                <input id="repairIssue" placeholder="Lỗi gặp phải" />
+                <input id="repairSolution" placeholder="Cách xử lý" />
+                <input id="technician" placeholder="Kỹ thuật viên" />
+                <button onclick="addRepairHistory()">Thêm lịch sử</button>
+            </div>
+            <div class="card">
+                <h3>Xem lịch sử sửa chữa</h3>
+                <input id="historyProductId" placeholder="Mã sản phẩm" />
+                <input id="historyIndex" type="number" placeholder="Lần sửa chữa (ví dụ: 0)" />
+                <button onclick="getRepairHistory()">Xem lịch sử</button>
+                <div id="historyResult" class="result empty">Chưa có lịch sử sửa chữa.</div>
+            </div>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>Kiểm tra bảo hành</h3>
+                <input id="validProductId" placeholder="Mã sản phẩm" />
+                <button onclick="isWarrantyValid()">Kiểm tra</button>
+                <div id="validResult" class="result empty">Chưa kiểm tra.</div>
+            </div>
+            <div class="card qr-card">
+                <h3>QR tra cứu bảo hành</h3>
+                <div id="qrBox">
+                    <img id="qrImage" class="qr-image" src="" alt="QR Code" />
+                </div>
+            </div>
+        </section>
+
+        <section class="card full">
+            <h3>Lịch sử giao dịch gần đây</h3>
+            <div id="txHistory" class="result">Chưa có giao dịch.</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 WarrantyChain - Blockchain Warranty Management System</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
