@@ -1,21 +1,8 @@
 # 📌 POSTER ĐỀ TÀI
 
-<p align="center">
-  <a href="images/poster.png">
-    <img src="images/poster.png" alt="Blockchain Warranty System Poster" width="900">
-  </a>
-</p>
-
-<p align="center">
-<b>Blockchain Warranty Management System on Ethereum Sepolia Testnet</b>
-</p>
-
-> 💡 Nhấn vào poster để xem kích thước đầy đủ.
-
----
+![Poster](images/poster.png)
 
 # 📖 Giới Thiệu
-
 Blockchain Warranty System là ứng dụng phi tập trung (DApp) hỗ trợ quản lý bảo hành sản phẩm bằng công nghệ Blockchain Ethereum.
 
 Hệ thống cho phép lưu trữ thông tin sản phẩm, thời gian bảo hành và lịch sử sửa chữa thông qua Smart Contract Solidity nhằm đảm bảo tính minh bạch, bảo mật và khả năng truy xuất dữ liệu.
