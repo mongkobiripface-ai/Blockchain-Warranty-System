@@ -6,10 +6,14 @@
 
 ## Dựa Trên Công Nghệ Blockchain Ethereum
 
-👨‍🎓 **Nguyễn Trung Hiếu**
-🏫 **Đại Học Đại Nam**
-👨‍🏫 **Giảng viên hướng dẫn: ThS. Trần Đăng Công**
+### 👨‍🎓 Nguyễn Trung Hiếu
 
+### 🏫 Đại Học Đại Nam
+
+### 👨‍🏫 Giảng viên hướng dẫn: ThS. Trần Đăng Công
+
+![GitHub repo size](https://img.shields.io/github/repo-size/mongkobiripface-ai/Blockchain-Warranty-System)
+![GitHub last commit](https://img.shields.io/github/last-commit/mongkobiripface-ai/Blockchain-Warranty-System)
 ![Ethereum](https://img.shields.io/badge/Ethereum-Blockchain-blue)
 ![Solidity](https://img.shields.io/badge/Solidity-Smart%20Contract-black)
 ![MetaMask](https://img.shields.io/badge/MetaMask-Wallet-orange)
@@ -21,36 +25,36 @@
 
 # 📖 Giới Thiệu
 
-Dự án xây dựng hệ thống quản lý bảo hành sản phẩm ứng dụng công nghệ Blockchain Ethereum nhằm nâng cao tính minh bạch, bảo mật và khả năng truy xuất dữ liệu.
+Blockchain Warranty System là ứng dụng phi tập trung (DApp) hỗ trợ quản lý bảo hành sản phẩm bằng công nghệ Blockchain Ethereum.
 
-Thông tin sản phẩm, thời hạn bảo hành và lịch sử sửa chữa được lưu trữ thông qua Smart Contract Solidity trên mạng Ethereum Sepolia Testnet.
+Hệ thống cho phép lưu trữ thông tin sản phẩm, thời gian bảo hành và lịch sử sửa chữa thông qua Smart Contract Solidity nhằm đảm bảo tính minh bạch, bảo mật và khả năng truy xuất dữ liệu.
 
 ---
 
 # 🎯 Mục Tiêu Đề Tài
 
-✅ Quản lý bảo hành điện tử
+✅ Số hóa quy trình bảo hành sản phẩm
 
-✅ Lưu trữ dữ liệu minh bạch
+✅ Lưu trữ dữ liệu trên Blockchain
 
-✅ Hạn chế chỉnh sửa trái phép
+✅ Tăng tính minh bạch và độ tin cậy
 
 ✅ Hỗ trợ truy xuất lịch sử sửa chữa
 
-✅ Ứng dụng Blockchain vào quản lý bảo hành sản phẩm
+✅ Nghiên cứu và ứng dụng công nghệ Blockchain vào thực tiễn
 
 ---
 
 # ⚙️ Công Nghệ Sử Dụng
 
-| Công nghệ     | Vai trò                  |
-| ------------- | ------------------------ |
-| 🔗 Ethereum   | Nền tảng Blockchain      |
-| 📜 Solidity   | Xây dựng Smart Contract  |
-| 🦊 MetaMask   | Kết nối ví người dùng    |
-| 🌐 Sepolia    | Mạng thử nghiệm Ethereum |
-| 💻 HTML/CSS   | Xây dựng giao diện       |
-| 🚀 JavaScript | Xử lý logic ứng dụng     |
+| Công nghệ     | Vai trò                    |
+| ------------- | -------------------------- |
+| 🔗 Ethereum   | Blockchain Platform        |
+| 📜 Solidity   | Smart Contract Development |
+| 🦊 MetaMask   | Wallet Integration         |
+| 🌐 Sepolia    | Ethereum Testnet           |
+| 💻 HTML / CSS | User Interface             |
+| 🚀 JavaScript | Application Logic          |
 
 ---
 
@@ -93,27 +97,15 @@ Người dùng
 
 # 📸 Hình Ảnh Hệ Thống
 
-## 🏠 Trang Chủ
+<p align="center">
+  <img src="images/home.png" width="45%">
+  <img src="images/metamask.png" width="45%">
+</p>
 
-![Trang chủ](images/home.png)
-
----
-
-## 🦊 Kết Nối MetaMask
-
-![MetaMask](images/metamask.png)
-
----
-
-## 🔧 Quản Lý Bảo Hành
-
-![Quản lý bảo hành](images/warranty.png)
-
----
-
-## 📜 Lịch Sử Giao Dịch Blockchain
-
-![Lịch sử giao dịch](images/history.png)
+<p align="center">
+  <img src="images/warranty.png" width="45%">
+  <img src="images/history.png" width="45%">
+</p>
 
 ---
 
@@ -138,25 +130,60 @@ Blockchain-Warranty-System
 
 ---
 
+# 🚀 Hướng Dẫn Chạy Dự Án
+
+### 1️⃣ Yêu cầu
+
+* Trình duyệt Chrome hoặc Microsoft Edge
+* MetaMask Wallet
+* Kết nối mạng Ethereum Sepolia Testnet
+
+### 2️⃣ Khởi chạy
+
+* Tải source code từ GitHub
+* Mở file `index.html`
+* Kết nối ví MetaMask
+* Chọn mạng Sepolia Testnet
+* Sử dụng các chức năng của hệ thống
+
+---
+
 # 🚀 Kết Quả Đạt Được
 
 ✅ Xây dựng thành công Smart Contract bằng Solidity
 
 ✅ Kết nối MetaMask với Ethereum Sepolia
 
-✅ Quản lý bảo hành sản phẩm trên Blockchain
+✅ Quản lý thông tin bảo hành trên Blockchain
 
 ✅ Lưu trữ lịch sử sửa chữa minh bạch
 
-✅ Hỗ trợ tra cứu thông tin bảo hành
+✅ Tra cứu thông tin sản phẩm theo thời gian thực
 
-✅ Theo dõi giao dịch qua Blockchain Explorer
+✅ Theo dõi giao dịch Blockchain thông qua Explorer
+
+---
+
+# 🔮 Hướng Phát Triển
+
+* 📱 Xây dựng ứng dụng Mobile
+* 🔳 Tích hợp QR Code sản phẩm
+* ☁️ Tích hợp IPFS lưu trữ tài liệu bảo hành
+* 👥 Phân quyền nhà sản xuất và khách hàng
+* 📊 Bổ sung thống kê và báo cáo dữ liệu
+* 🔗 Triển khai trên Ethereum Mainnet
+
+---
+
+# 🏆 Kết Luận
+
+Dự án Blockchain Warranty System đã xây dựng thành công hệ thống quản lý bảo hành sản phẩm dựa trên công nghệ Blockchain Ethereum.
+
+Thông qua Smart Contract Solidity và MetaMask Wallet, hệ thống cho phép lưu trữ và quản lý thông tin bảo hành minh bạch, an toàn và có khả năng truy xuất dữ liệu hiệu quả.
 
 ---
 
 # 🔗 GitHub Repository
-
-Repository:
 
 https://github.com/mongkobiripface-ai/Blockchain-Warranty-System
 
@@ -172,8 +199,8 @@ https://github.com/mongkobiripface-ai/Blockchain-Warranty-System
 
 👨‍🏫 Giảng viên hướng dẫn: ThS. Trần Đăng Công
 
-📅 Năm học 2025 - 2026
+📅 Năm học 2025 – 2026
 
 ---
 
-⭐ Dự án được thực hiện phục vụ mục đích học tập và nghiên cứu công nghệ Blockchain.
+⭐ Dự án được thực hiện phục vụ mục đích học tập, nghiên cứu và ứng dụng công nghệ Blockchain trong quản lý bảo hành sản phẩm.
