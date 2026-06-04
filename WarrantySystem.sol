@@ -20,7 +20,7 @@ contract WarrantySystem {
         string solution;
         string technician;
     }
-
+z`
     mapping(string => Product) private products;
     mapping(string => RepairHistory[]) private repairHistories;
 
