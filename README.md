@@ -158,20 +158,6 @@ Hiển thị các giao dịch đã thực hiện trên hệ thống như thêm s
 
 ---
 
-# 🎥 Demo & Truy Cập Nhanh
-
-## Video Demo
-
-Thêm liên kết video demo dự án tại đây:
-
-https://youtube.com/
-
-## QR Code Repository
-
-![QR Code](images/qrcode.png)
-
----
-
 # 📊 Thống Kê Dự Án
 
 * 01 Smart Contract Solidity
